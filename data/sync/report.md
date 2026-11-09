@@ -1,17 +1,6 @@
 # RBI sync, 2026-11-09
 
-Checked 45 NBFC-family Master Directions on the RBI site. 27 already match RegLens.
-
-## Listed under a later date, text unchanged
-
-- Microfinance Institution (RBI lists 2025-12-05; RegLens has 2025-11-28)
-- Peer To Peer Lending Platform (RBI lists 2025-12-05; RegLens has 2025-11-28)
-- Account Aggregator (RBI lists 2026-03-10; RegLens has 2025-11-28)
-- Climate Finance And Management Of Climate Change Risks (RBI lists 2026-10-01; RegLens has 2025-11-28)
-- Managing Risks In Outsourcing (RBI lists 2026-10-01; RegLens has 2025-11-28)
-- Credit Cards Issuance And Conduct (RBI lists 2026-07-01; RegLens has 2025-11-28)
-- Voluntary Amalgamation (RBI lists 2026-04-15; RegLens has 2025-11-28)
-- Acquisition Of Shareholding Or Control (RBI lists 2026-04-15; RegLens has 2025-11-28)
+Checked 45 NBFC-family Master Directions on the RBI site. 35 already match RegLens.
 
 ## On the RBI site but not in RegLens (10)
 
