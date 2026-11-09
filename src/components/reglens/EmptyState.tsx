@@ -3,8 +3,10 @@
 import { useState, type FormEvent, type KeyboardEvent } from 'react';
 import Link from 'next/link';
 import s from './reglens.module.css';
-import { CORE_DIRECTIONS, EXAMPLES, TOPICS, TYPE_DIRECTIONS } from './directions';
-import { cx } from './format';
+import { EXAMPLES, TOPICS } from './directions';
+import { cx, formatDate } from './format';
+import { useDirections } from './tools';
+import { directionType } from '../../lib/profile';
 import { ArrowIcon, BookIcon, ChevronIcon, SealIcon, ShieldIcon } from './icons';
 import UpdateCheck from './UpdateCheck';
 
@@ -17,6 +19,11 @@ interface Props {
 
 export default function EmptyState({ input, setInput, onAsk, busy }: Props) {
   const [showCoverage, setShowCoverage] = useState(false);
+  // The live list from the search index, so Directions added by the RBI sync show up here too.
+  const { directions } = useDirections();
+  const core = directions.filter((d) => !directionType(d.document));
+  const typed = directions.filter((d) => directionType(d.document));
+  const latest = directions.reduce((m, d) => (d.date > m ? d.date : m), '');
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
@@ -101,7 +108,8 @@ export default function EmptyState({ input, setInput, onAsk, busy }: Props) {
             aria-expanded={showCoverage}
           >
             <span>
-              <strong>35 Master Directions</strong> for NBFCs, 1,327 pages, current to October 2026
+              <strong>{directions.length ? `${directions.length} Master Directions` : 'RBI Master Directions'}</strong> for NBFCs
+              {latest ? `, latest version ${formatDate(latest)}` : ''}
             </span>
             <span className={s.coverageAction}>
               {showCoverage ? 'Hide list' : 'See all'}
@@ -113,10 +121,10 @@ export default function EmptyState({ input, setInput, onAsk, busy }: Props) {
               <div>
                 <h2 className={s.coverageGroup}>Rules for all NBFCs</h2>
                 <ul className={s.coverageList}>
-                  {CORE_DIRECTIONS.map((d) => (
-                    <li key={d.name} className={s.coverageItem}>
-                      <span>{d.name}</span>
-                      <span className={s.coverageDate}>{d.updated}</span>
+                  {core.map((d) => (
+                    <li key={d.document} className={s.coverageItem}>
+                      <span>{d.shortTitle}</span>
+                      <span className={s.coverageDate}>{formatDate(d.date)}</span>
                     </li>
                   ))}
                 </ul>
@@ -124,10 +132,10 @@ export default function EmptyState({ input, setInput, onAsk, busy }: Props) {
               <div>
                 <h2 className={s.coverageGroup}>Specific types of NBFC</h2>
                 <ul className={s.coverageList}>
-                  {TYPE_DIRECTIONS.map((d) => (
-                    <li key={d.name} className={s.coverageItem}>
-                      <span>{d.name}</span>
-                      <span className={s.coverageDate}>{d.updated}</span>
+                  {typed.map((d) => (
+                    <li key={d.document} className={s.coverageItem}>
+                      <span>{d.shortTitle}</span>
+                      <span className={s.coverageDate}>{formatDate(d.date)}</span>
                     </li>
                   ))}
                 </ul>

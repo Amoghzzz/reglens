@@ -372,7 +372,7 @@ function NotFound({ turn, onAsk }: { turn: Turn; onAsk: (q: string) => void }) {
       <p className={s.noticeBody}>
         {offTopic
           ? "This question looks like it's about something else, so RegLens hasn't tried to answer it. It's built for one job: finding what the RBI's Master Directions say about NBFCs, and showing you exactly where they say it."
-          : 'RegLens searched all 35 Master Directions for NBFCs and found nothing that answers this, so it won\u2019t guess. The answer may be in other RBI documents, such as circulars or monetary policy announcements, which RegLens doesn\u2019t cover yet.'}
+          : 'RegLens searched all the RBI Master Directions for NBFCs it covers and found nothing that answers this, so it won\u2019t guess. The answer may be in other RBI documents, such as circulars or monetary policy announcements, which RegLens doesn\u2019t cover yet.'}
       </p>
       <p className={s.noticeSub}>{offTopic ? 'Questions RegLens can answer' : 'Questions the Directions do answer'}</p>
       <ul className={s.suggestions}>

@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { findParagraphChunks, hybridSearch, type SearchResult } from './search';
+import { findParagraphChunks, hybridSearch, loadSearchIndex, type SearchResult } from './search';
 import { type Citation, verifyCitations, paragraphText, citedStatements } from './citations';
 import { attemptsFor, generateJson, getKey, withFallbacks, withIdleTimeout } from './llm';
 import { type Profile, TYPE_OPTIONS, describeProfile, isProfileSet, profileSearchTerms } from './profile';
@@ -148,7 +148,12 @@ export interface QAResult {
 }
 
 const LEGAL_NOTICE = 'Information only, not legal advice.';
-const DIRECTION_COUNT = 35;
+// How many Directions are indexed (counted from the search index, so the sync can add more).
+let directionCountCache = 0;
+function directionCount(): number {
+  if (!directionCountCache) directionCountCache = new Set(loadSearchIndex().chunks.map((c) => c.document)).size;
+  return directionCountCache;
+}
 
 /* ------------------------------------------------------------------ Cache */
 
@@ -469,8 +474,8 @@ export async function* askQuestionStream(query: string, options: AskOptions | st
     step: 'search',
     message:
       searchMode === 'all_directions'
-        ? `Checking every one of the ${DIRECTION_COUNT} Directions`
-        : `Searching ${DIRECTION_COUNT} Directions for the most relevant passages`,
+        ? `Checking every one of the ${directionCount()} Directions`
+        : `Searching ${directionCount()} Directions for the most relevant passages`,
   };
   const ownDoc = TYPE_OPTIONS.find((t) => t.value === profile?.type)?.doc;
   let retrieved: SearchResult[];

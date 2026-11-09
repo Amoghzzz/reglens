@@ -1,4 +1,4 @@
-// The 35 RBI Master Directions RegLens has indexed, shown on the start screen so people know the scope.
+// Example questions and topics for the start screen. (The list of indexed Directions comes from /api/directions.)
 // Dates are the "updated as on" dates of the PDFs in /docs.
 
 export interface DirectionInfo {

@@ -1,7 +1,7 @@
 import { connection } from 'next/server';
 import { listDirections } from '../../../lib/obligations';
 
-/** The 35 indexed Directions, with whether a checklist has been generated for each. */
+/** The indexed Directions, with whether a checklist has been generated for each. */
 export async function GET() {
   // Read fresh data on every request (otherwise Next.js may prerender this at build time).
   await connection();
