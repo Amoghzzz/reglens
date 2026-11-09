@@ -56,6 +56,16 @@ export function formatDate(iso: string): string {
 
 /* ------------------------------- Citations -------------------------------- */
 
+/** ", page 12", or nothing for Directions read from the RBI web page (which has no page numbers). */
+export function pageSuffix(page?: string, word = 'page'): string {
+  return page && page !== 'web' ? `, ${word} ${page}` : '';
+}
+
+/** "page 12", or "RBI web page" for Directions read from the web page. */
+export function pageLabel(page?: string): string {
+  return page === 'web' ? 'RBI web page' : `page ${page ?? ''}`.trim();
+}
+
 export interface CitationPart {
   title: string;
   para: string;

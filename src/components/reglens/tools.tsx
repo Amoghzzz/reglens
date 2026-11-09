@@ -7,7 +7,7 @@ import type { Obligation } from '../../lib/obligationTypes';
 import { appliesToProfile } from '../../lib/obligationTypes';
 import type { Profile } from '../../lib/profile';
 import { isProfileSet } from '../../lib/profile';
-import { cx, formatDate } from './format';
+import { cx, formatDate, pageSuffix } from './format';
 
 /* Shared pieces for the Checklists, Calendar and Policy check screens. */
 
@@ -86,7 +86,7 @@ export function AppliesChip({ item, document, profile }: { item: Obligation; doc
 }
 
 export function CiteChip({ item, onClick }: { item: Obligation; onClick?: () => void }) {
-  const label = `Para ${item.para || '?'}${item.page ? `, p.${item.page}` : ''}`;
+  const label = `Para ${item.para || '?'}${pageSuffix(item.page, 'p.').replace('p. ', 'p.')}`;
   if (!item.verified || !onClick) {
     return (
       <span className={cx(s.citeChip, s.citeChipWarn)} title="This paragraph could not be matched in the Direction">

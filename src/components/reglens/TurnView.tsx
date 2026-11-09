@@ -18,6 +18,8 @@ import {
   toBlocks,
   type Block,
   type Note,
+  pageLabel,
+  pageSuffix,
 } from './format';
 import { EXAMPLES } from './directions';
 import { BookIcon, CautionIcon, CheckIcon, ChevronIcon, CopyIcon, FlagIcon, PrintIcon, SealIcon, SparkIcon, ThumbIcon } from './icons';
@@ -321,7 +323,7 @@ export default function TurnView({ turn, onOpen, onAsk }: Props) {
                     <span className={s.traceText}>
                       <span className={s.traceTitle}>{shortTitle(docTitleOf(r.chunk))}</span>
                       <span className={s.traceRef}>
-                        {paraRange(r.chunk) || 'Introduction'}, page {r.chunk.pageRange}
+                        {paraRange(r.chunk) || 'Introduction'}, {pageLabel(r.chunk.pageRange)}
                         {used && <span className={s.traceUsed}>, cited in the answer</span>}
                         {r.via === 'crossref' && <span className={s.traceVia}>, followed from a cross-reference</span>}
                         {r.via === 'profile' && <span className={s.traceVia}>, from your type of NBFC</span>}
@@ -517,7 +519,7 @@ function NoteCard({
       </div>
       <div className={s.noteRef}>
         Paragraph {note.part.para}
-        {note.page ? `, page ${note.page}` : ''}
+        {pageSuffix(note.page)}
         {note.verified && (
           <span className={s.noteVerified}>
             <CheckIcon />

@@ -1,0 +1,65 @@
+# Weekly: check the RBI Master Directions page, download Directions whose text changed, rebuild the search
+# index for them, and open a pull request. Nothing reaches the live site until the pull request is merged.
+name: RBI sync
+
+on:
+  schedule:
+    - cron: "17 3 * * 1" # Mondays 03:17 UTC (08:47 IST)
+  workflow_dispatch:
+    inputs:
+      add_new:
+        description: "Also add NBFC Directions RegLens does not cover yet (up to 5 per run)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: rbi-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check RBI and download changed Directions
+        id: sync
+        run: npm run sync -- ${{ inputs.add_new && '--add-new' || '' }}
+
+      - name: Rebuild the search index for changed documents
+        if: steps.sync.outputs.changed == 'true'
+        run: npm run ingest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Open a pull request
+        if: steps.sync.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: rbi-sync
+          delete-branch: true
+          commit-message: "RBI sync: updated Directions"
+          title: "RBI sync: updated Master Directions"
+          body-path: data/sync/report.md
+          add-paths: |
+            docs/**
+            data/chunks.json
+            data/vectors.bin
+            data/sync/**
+
+      - name: Summary
+        if: always()
+        run: |
+          if [ -f data/sync/report.md ]; then cat data/sync/report.md >> "$GITHUB_STEP_SUMMARY"; fi

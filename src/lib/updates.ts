@@ -1,5 +1,5 @@
 import { listDirections } from './obligations';
-import { readJson, writeJson } from './store';
+import { readJson, readProjectJson, writeJson } from './store';
 
 /**
  * Update checker: reads the RBI's public Master Directions page and compares each NBFC-family Direction's
@@ -18,6 +18,8 @@ export interface RbiEntry {
   date: string; // ISO: "Updated as on" date if given, else the date heading it is listed under
   dateSource: 'updated' | 'listed';
   url: string;
+  /** Direct link to the PDF on rbidocs.rbi.org.in, from the same row of the list. */
+  pdfUrl?: string;
 }
 
 // newer: the RBI title says "Updated as on" a later date. check: only the list heading is later, which may mean
@@ -110,8 +112,11 @@ export function parseRbiList(html: string): RbiEntry[] {
     const date = updatedIso || issueDate;
     const dateSource: RbiEntry['dateSource'] = updatedIso ? 'updated' : 'listed';
     const url = m[1].startsWith('http') ? m[1] : `https://rbi.org.in/Scripts/${m[1].replace(/^.*?(BS_ViewMasDirections)/, '$1')}`;
+    const row = html.slice(m.index ?? 0, (m.index ?? 0) + 4000);
+    const rowEnd = row.search(/<\/tr>/i);
+    const pdfUrl = (rowEnd > 0 ? row.slice(0, rowEnd) : row).match(/href=["']?(https?:\/\/rbidocs\.rbi\.org\.in\/[^"'\s>]+\.pdf)/i)?.[1];
     const prev = byId.get(m[2]);
-    if (!prev || date > prev.date) byId.set(m[2], { id: m[2], title, ...kind, date, dateSource, url });
+    if (!prev || date > prev.date) byId.set(m[2], { id: m[2], title, ...kind, date, dateSource, url, pdfUrl });
   }
   return Array.from(byId.values());
 }
@@ -126,7 +131,7 @@ function words(text: string): string[] {
     .map((w) => (w.length > 4 ? w.replace(/(?:ies)$/, 'y').replace(/s$/, '') : w));
 }
 
-function similarity(a: string, b: string): number {
+export function similarity(a: string, b: string): number {
   const A = new Set(words(a));
   const B = new Set(words(b));
   if (!A.size || !B.size) return A.size === B.size ? 1 : 0;
@@ -141,7 +146,12 @@ function indexedSubject(entity: string, shortTitle: string): string {
 }
 
 export function compare(entries: RbiEntry[]): Pick<UpdateReport, 'rows' | 'notIndexed'> {
-  const directions = listDirections();
+  // The sync records versions whose text it confirmed identical to the indexed file (data/sync/verified.json).
+  const verified = readProjectJson<Record<string, string>>('data/sync/verified.json') ?? {};
+  const directions = listDirections().map((d) => {
+    const v = verified[d.document];
+    return v && v > d.date ? { ...d, date: v } : d;
+  });
   const used = new Set<string>();
   const rows: UpdateRow[] = directions.map((d) => {
     const subject = indexedSubject(d.entity, d.shortTitle);
@@ -181,24 +191,35 @@ export function cachedReport(): UpdateReport | null {
   return readJson<UpdateReport>(CACHE);
 }
 
+/** Fetches the RBI Master Directions page with a browser-like request. */
+export async function fetchRbiList(timeoutMs = 25_000): Promise<string> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(RBI_LIST_URL, {
+      signal: controller.signal,
+      headers: BROWSER_HEADERS,
+      cache: 'no-store',
+    });
+    if (!res.ok) throw new Error(`The RBI site answered with status ${res.status}.`);
+    return await res.text();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+export const BROWSER_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36',
+  Accept: 'text/html,application/xhtml+xml,application/pdf',
+  'Accept-Language': 'en-IN,en;q=0.9',
+};
+
 export async function checkForUpdates(refresh = false): Promise<UpdateReport> {
   const cached = cachedReport();
   if (!refresh && cached?.ok && Date.now() - Date.parse(cached.checkedAt) < MAX_AGE_MS) return cached;
 
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 25_000);
   try {
-    const res = await fetch(RBI_LIST_URL, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36',
-        Accept: 'text/html,application/xhtml+xml',
-        'Accept-Language': 'en-IN,en;q=0.9',
-      },
-      cache: 'no-store',
-    });
-    if (!res.ok) throw new Error(`The RBI site answered with status ${res.status}.`);
-    const entries = parseRbiList(await res.text());
+    const entries = parseRbiList(await fetchRbiList());
     if (!entries.length) throw new Error('Could not find any NBFC Master Directions on the RBI page. Its layout may have changed.');
     const report: UpdateReport = { checkedAt: new Date().toISOString(), ok: true, ...compare(entries) };
     writeJson(CACHE, report);
@@ -212,7 +233,5 @@ export async function checkForUpdates(refresh = false): Promise<UpdateReport> {
           : 'Could not reach the RBI site.';
     if (cached?.ok) return { ...cached, error: `Showing the last successful check. This time: ${message}` };
     return { checkedAt: new Date().toISOString(), ok: false, error: message, rows: [], notIndexed: [] };
-  } finally {
-    clearTimeout(timer);
   }
 }

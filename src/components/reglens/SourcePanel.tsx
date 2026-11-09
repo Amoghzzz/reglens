@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import s from './reglens.module.css';
 import type { PanelState } from './types';
-import { classifyLine, cx, docTitleOf, formatDate, markLines, paraRange } from './format';
+import { classifyLine, cx, docTitleOf, formatDate, markLines, pageLabel, pageSuffix, paraRange } from './format';
 import { CloseIcon, CopyIcon } from './icons';
 
 interface Props {
@@ -46,7 +46,7 @@ export default function SourcePanel({ state, onClose }: Props) {
   const title = docTitleOf(chunk);
   const lines = markLines(chunk.text, paragraph);
   const firstHighlight = lines.findIndex((l) => l.hl);
-  const citationText = `${title}${paragraph ? `, para ${paragraph}` : ''}, page ${chunk.pageRange}`;
+  const citationText = `${title}${paragraph ? `, para ${paragraph}` : ''}${pageSuffix(chunk.pageRange)}`;
 
   const copy = async () => {
     try {
@@ -87,8 +87,16 @@ export default function SourcePanel({ state, onClose }: Props) {
               </div>
             )}
             <div className={s.fact}>
-              <dt>Page</dt>
-              <dd>{chunk.pageRange}</dd>
+              <dt>{chunk.pageRange === 'web' ? 'Source' : 'Page'}</dt>
+              <dd>
+                {chunk.pageRange === 'web' && chunk.sourceUrl ? (
+                  <a href={chunk.sourceUrl} target="_blank" rel="noreferrer">
+                    RBI web page
+                  </a>
+                ) : (
+                  pageLabel(chunk.pageRange)
+                )}
+              </dd>
             </div>
             {chunk.date && (
               <div className={s.fact}>

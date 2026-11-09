@@ -39,6 +39,7 @@ function slim(r: SearchResult) {
       id: c.id,
       document: c.document,
       contextLine: c.contextLine,
+      sourceUrl: c.sourceUrl,
       chapter: c.chapter,
       sections: c.sections ?? [],
       pageRange: c.pageRange,

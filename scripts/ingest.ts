@@ -3,6 +3,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { EMBEDDING_MODEL_NAME, getEmbeddingModel } from '../src/lib/embeddings';
+import { splitSourceLine } from '../src/lib/rbiHtml';
 
 // Load .env.local
 dotenv.config({ path: path.resolve(process.cwd(), '.env.local') });
@@ -59,10 +60,12 @@ export interface DocumentChunk {
   textToEmbed: string;
   wordCount: number;
   embedding?: number[];
+  /** For Directions read from their rbi.org.in web page (.txt in docs/): the page URL. Such chunks have pageRange "web". */
+  sourceUrl?: string;
 }
 
 export function formatReadableTitle(filename: string): string {
-  const base = path.basename(filename, '.pdf');
+  const base = path.basename(filename).replace(/\.(pdf|txt)$/i, '');
   const parts = base.split('_');
   if (parts.length < 4) return base;
 
@@ -255,7 +258,7 @@ export function groupIntoLogicalUnits(lines: LineWithPage[]): LogicalUnit[] {
 export function buildDocumentChunks(units: LogicalUnit[], docName: string): DocumentChunk[] {
   const chunks: DocumentChunk[] = [];
   const readableDocTitle = formatReadableTitle(docName);
-  const baseName = path.basename(docName, '.pdf');
+  const baseName = path.basename(docName).replace(/\.(pdf|txt)$/i, '');
   const parts = baseName.split('_');
   const regulator = parts[0] || 'RBI';
   const entity = parts[1] || 'NBFC';
@@ -419,6 +422,50 @@ export function saveIndexAtomically(outputPath: string, chunks: DocumentChunk[])
   fs.renameSync(tempPath, outputPath);
 }
 
+const VECTOR_DIM = 3072;
+
+/** Embeddings from the committed search files (data/chunks.json + data/vectors.bin), keyed by chunk id. */
+export function loadCommittedEmbeddings(dataDir: string): Map<string, { text: string; embedding: number[] }> {
+  const out = new Map<string, { text: string; embedding: number[] }>();
+  const chunksPath = path.join(dataDir, 'chunks.json');
+  const vectorsPath = path.join(dataDir, 'vectors.bin');
+  if (!fs.existsSync(chunksPath) || !fs.existsSync(vectorsPath)) return out;
+  try {
+    const chunks: { id: string; textToEmbed: string }[] = JSON.parse(fs.readFileSync(chunksPath, 'utf8'));
+    const buf = fs.readFileSync(vectorsPath);
+    const vectors = new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
+    if (vectors.length !== chunks.length * VECTOR_DIM) {
+      console.warn('data/vectors.bin does not match data/chunks.json; ignoring it.');
+      return out;
+    }
+    chunks.forEach((c, i) => {
+      out.set(c.id, { text: c.textToEmbed, embedding: Array.from(vectors.subarray(i * VECTOR_DIM, (i + 1) * VECTOR_DIM)) });
+    });
+  } catch (e) {
+    console.warn('Could not read the committed search files:', e);
+  }
+  return out;
+}
+
+/** Writes the files the app searches: chunk text and metadata (chunks.json) and the embeddings (vectors.bin). */
+export function writeSearchFiles(dataDir: string, chunks: DocumentChunk[]) {
+  const done = chunks.filter((c) => Array.isArray(c.embedding) && c.embedding.length === VECTOR_DIM);
+  if (done.length !== chunks.length) {
+    console.warn(`Not writing search files: ${chunks.length - done.length} chunks have no embedding yet.`);
+    return;
+  }
+  const vectors = new Float32Array(chunks.length * VECTOR_DIM);
+  chunks.forEach((c, i) => vectors.set(c.embedding!, i * VECTOR_DIM));
+  const meta = chunks.map(({ embedding, ...rest }) => rest);
+  const chunksPath = path.join(dataDir, 'chunks.json');
+  const vectorsPath = path.join(dataDir, 'vectors.bin');
+  fs.writeFileSync(`${chunksPath}.tmp`, JSON.stringify(meta), 'utf8');
+  fs.writeFileSync(`${vectorsPath}.tmp`, Buffer.from(vectors.buffer));
+  fs.renameSync(`${chunksPath}.tmp`, chunksPath);
+  fs.renameSync(`${vectorsPath}.tmp`, vectorsPath);
+  console.log(`Search files written: data/chunks.json (${chunks.length} chunks) and data/vectors.bin.`);
+}
+
 export function printRandomChunks(chunks: DocumentChunk[], count = 3) {
   console.log(`\n===============================================================`);
   console.log(`  Sample Chunks Inspection (${count} Samples)`);
@@ -541,8 +588,12 @@ async function main() {
   }
 
   // 1. Check existing index for resumability
+  // --plan: chunk everything and report what would need embedding, without calling the API or writing files.
+  // --from-committed: ignore data/index.json and reuse embeddings from the committed search files instead.
+  const planOnly = process.argv.includes('--plan');
+  const fromCommitted = process.argv.includes('--from-committed') || planOnly;
   const existingEmbeddingsMap = new Map<string, number[]>();
-  if (fs.existsSync(outputPath)) {
+  if (!fromCommitted && fs.existsSync(outputPath)) {
     try {
       const existingData: DocumentChunk[] = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
       for (const item of existingData) {
@@ -558,8 +609,20 @@ async function main() {
     }
   }
 
+  // 1b. No index.json (for example in the scheduled GitHub run): reuse the embeddings in the committed search
+  // files, but only for chunks whose text is unchanged, so only new or changed documents use embedding quota.
+  const seededText = new Map<string, string>();
+  if (existingEmbeddingsMap.size === 0) {
+    const seeded = loadCommittedEmbeddings(dataDir);
+    for (const [id, { text, embedding }] of seeded) {
+      existingEmbeddingsMap.set(id, embedding);
+      seededText.set(id, text);
+    }
+    if (seeded.size > 0) console.log(`Reusing ${seeded.size} embeddings from data/chunks.json and data/vectors.bin.\n`);
+  }
+
   // 2. Read and parse PDFs with continuous text across pages
-  const files = fs.readdirSync(docsDir).filter(f => f.toLowerCase().endsWith('.pdf')).sort();
+  const files = fs.readdirSync(docsDir).filter(f => /\.(pdf|txt)$/i.test(f)).sort();
   console.log(`Scanning and chunking ${files.length} PDF documents in /docs...`);
 
   const allChunks: DocumentChunk[] = [];
@@ -569,16 +632,27 @@ async function main() {
     const file = files[i];
     const filePath = path.join(docsDir, file);
 
-    const pages = await extractPages(filePath);
+    // .txt files are Directions read from their rbi.org.in web page (see scripts/sync.ts): one "page", no numbers.
+    const isWeb = file.toLowerCase().endsWith('.txt');
+    const web = isWeb ? splitSourceLine(fs.readFileSync(filePath, 'utf8')) : null;
+    const pages = web ? [{ num: 1, text: web.text }] : await extractPages(filePath);
     totalPagesProcessed += pages.length;
 
     const cleanLines = extractCleanContinuousLines(pages);
     const units = groupIntoLogicalUnits(cleanLines);
     const docChunks = buildDocumentChunks(units, file);
+    if (web) {
+      for (const c of docChunks) {
+        c.pageRange = 'web';
+        c.spansPages = false;
+        if (web.url) c.sourceUrl = web.url;
+      }
+    }
 
     // Restore existing embeddings if resuming
     for (const chunk of docChunks) {
-      if (existingEmbeddingsMap.has(chunk.id)) {
+      const seededFor = seededText.get(chunk.id);
+      if (existingEmbeddingsMap.has(chunk.id) && (seededFor === undefined || seededFor === chunk.textToEmbed)) {
         chunk.embedding = existingEmbeddingsMap.get(chunk.id);
       }
     }
@@ -602,6 +676,14 @@ async function main() {
   console.log(`  Pending Embedding         : ${pendingChunks.length}`);
   console.log(`===============================================================\n`);
 
+  if (planOnly) {
+    const byDoc = new Map<string, number>();
+    for (const c of pendingChunks) byDoc.set(c.document, (byDoc.get(c.document) ?? 0) + 1);
+    console.log(byDoc.size ? 'Documents that would be (re-)embedded:' : 'Nothing would be re-embedded: every chunk matches the committed index.');
+    for (const [doc, n] of byDoc) console.log(`  ${doc}: ${n} chunks`);
+    return;
+  }
+
   // Save chunking to disk immediately
   saveIndexAtomically(outputPath, allChunks);
 
@@ -615,6 +697,7 @@ async function main() {
 
   if (pendingChunks.length === 0) {
     console.log(`✓ All ${allChunks.length} chunks already have embeddings! Nothing to embed.`);
+    writeSearchFiles(dataDir, allChunks);
     printRandomChunks(allChunks, 3);
     return;
   }
@@ -648,7 +731,8 @@ async function main() {
       console.warn(`===============================================================\n`);
       saveIndexAtomically(outputPath, allChunks);
       printRandomChunks(allChunks, 3);
-      process.exit(0);
+      // In the scheduled run, a half-built index must not be committed, so fail the job instead.
+      process.exit(process.env.CI ? 2 : 0);
     }
 
     if (result.embeddings) {
@@ -671,6 +755,7 @@ async function main() {
   }
 
   console.log(`\n\n✓ All embeddings successfully generated with ${EMBEDDING_MODEL_NAME}!`);
+  writeSearchFiles(dataDir, allChunks);
 
   const stats = fs.statSync(outputPath);
   const sizeMb = (stats.size / (1024 * 1024)).toFixed(2);

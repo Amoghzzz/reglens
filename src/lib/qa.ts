@@ -274,7 +274,8 @@ export function buildPrompt(
       const body =
         mode === 'all_directions' && i >= 8 && r.via !== 'crossref' ? focusText(r.chunk.text, searchText ?? query) : r.chunk.text;
       const tag = r.via === 'crossref' ? ' | followed from a cross-reference' : r.via === 'profile' ? " | from the user's own Direction" : '';
-      return `--- CHUNK ${i + 1} [ID: ${r.chunk.id} | Page ${r.chunk.pageRange} | Paragraphs: ${r.chunk.paragraphNumbers.join(', ') || 'N/A'}${tag}] ---
+      const page = r.chunk.pageRange === 'web' ? 'no page numbers (RBI web page)' : r.chunk.pageRange;
+      return `--- CHUNK ${i + 1} [ID: ${r.chunk.id} | Page ${page} | Paragraphs: ${r.chunk.paragraphNumbers.join(', ') || 'N/A'}${tag}] ---
 Context: ${r.chunk.contextLine}
 ${body}`;
     })
@@ -337,6 +338,7 @@ Bullet points in the form "- **Term**: plain explanation" for up to 4 technical 
 
 CITATIONS:
 - Every rule or number must be followed by its source in this exact format: [Direction title, para X, page Y]
+  If the chunk header says "no page numbers", leave the page out: [Direction title, para X]
   Example: [RBI Concentration Risk Management Directions for NBFCs, para 13, page 10]
 - Use the Direction title, paragraph number and page shown in the chunk header and context line.
 - Put the citation at the end of the sentence or bullet it supports.

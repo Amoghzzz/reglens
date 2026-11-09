@@ -12,6 +12,8 @@ export interface ChunkView {
   date: string;
   entity: string;
   text: string;
+  /** Set when the Direction was read from its rbi.org.in web page (pageRange is then "web"). */
+  sourceUrl?: string;
 }
 
 export interface ResultView {

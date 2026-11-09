@@ -1,5 +1,5 @@
 import type { Turn } from './types';
-import { LEGAL_NOTICE, buildNotes, docTitleOf, formatDate, noteKey, segments, toBlocks } from './format';
+import { LEGAL_NOTICE, buildNotes, docTitleOf, formatDate, noteKey, pageSuffix, segments, toBlocks } from './format';
 
 /** Replaces inline citations with [n] markers and returns the numbered source list. */
 function prepare(turn: Turn) {
@@ -24,7 +24,7 @@ function prepare(turn: Turn) {
 }
 
 function sourceLine(n: { n: number; title: string; part: { para: string }; page: string; verified: boolean }) {
-  return `[${n.n}] ${n.title}, para ${n.part.para}${n.page ? `, page ${n.page}` : ''}${n.verified ? '' : ' (not verified)'}`;
+  return `[${n.n}] ${n.title}, para ${n.part.para}${pageSuffix(n.page)}${n.verified ? '' : ' (not verified)'}`;
 }
 
 /** Plain-text version for pasting into an email, note or ticket. */
@@ -59,7 +59,7 @@ export function printMemo(turn: Turn, profileLabel?: string): boolean {
     .join('\n');
   const sources = notes
     .map(
-      (n) => `<li><strong>${esc(n.title)}</strong>, paragraph ${esc(n.part.para)}${n.page ? `, page ${esc(n.page)}` : ''}${
+      (n) => `<li><strong>${esc(n.title)}</strong>, paragraph ${esc(n.part.para)}${esc(pageSuffix(n.page))}${
         n.result?.chunk.date ? ` <span class="muted">(version updated ${esc(formatDate(n.result.chunk.date))})</span>` : ''
       }${n.verified ? '' : ' <span class="warn">Not verified</span>'}${
         n.support && n.support.verdict !== 'supported'

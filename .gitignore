@@ -49,3 +49,6 @@ data/query_cache.json
 # so the hosted app can show them.
 data/runtime/*.jsonl
 data/runtime/**/*.tmp
+
+# Sample pages saved by `npm run sync -- --probe-page --save`
+data/sync/sample-*.html

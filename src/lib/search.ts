@@ -19,6 +19,8 @@ export interface ChunkMetadata {
   section: string;
   sections: string[];
   contextLine: string;
+  /** Set for Directions read from their rbi.org.in web page; their pageRange is "web". */
+  sourceUrl?: string;
   text: string;
   textToEmbed: string;
   wordCount: number;
