@@ -1,128 +1,77 @@
 {
-  "at": "2026-11-09T16:47:18.935Z",
+  "at": "2026-11-09T17:35:07.614Z",
   "dryRun": false,
   "actions": [
     {
       "kind": "added",
       "entry": {
-        "id": "13274",
-        "title": "Reserve Bank of India (Non-Banking Financial Companies - Internal Ombudsman) Directions, 2026",
+        "id": "13589",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies - Internal Audit Function) Directions, 2026",
         "entity": "NBFC",
-        "subject": "Internal Ombudsman",
-        "date": "2026-01-14",
+        "subject": "Internal Audit Function",
+        "date": "2026-07-31",
         "dateSource": "listed",
-        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13274",
-        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/383MD14012026559E41DD96224880B75EDB2B96E4BD8B.PDF"
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13589",
+        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/464MD4F5E2EE83BB848DFB6B3475F8B91F45B.PDF"
       },
-      "file": "RBI_NBFC_InternalOmbudsman_2026-01-14.txt"
+      "file": "RBI_NBFC_InternalAuditFunction_2026-07-31.txt"
     },
     {
       "kind": "added",
       "entry": {
-        "id": "13585",
-        "title": "Reserve Bank of India (Non-Banking Financial Companies - Auditor’s Report) Directions, 2026",
+        "id": "13590",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Fraud Risk Management) Directions, 2026",
         "entity": "NBFC",
-        "subject": "Auditor’s Report",
+        "subject": "Fraud Risk Management",
         "date": "2026-07-31",
         "dateSource": "listed",
-        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13585",
-        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/468MDF194492AB28E4600BEA9DFBF8D32CC13.PDF"
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13590",
+        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/463MDC5167A28A3B24A2B856804E201261635.PDF"
       },
-      "file": "RBI_NBFC_AuditorsReport_2026-07-31.txt"
+      "file": "RBI_NBFC_FraudRiskManagement_2026-07-31.txt"
     },
     {
       "kind": "added",
       "entry": {
-        "id": "13586",
-        "title": "Reserve Bank of India (Non-Banking Financial Companies – Miscellaneous) Supervisory Directions, 2026",
+        "id": "13591",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Digital Payment Security Controls) Directions, 2026",
         "entity": "NBFC",
-        "subject": "Miscellaneous (Supervisory)",
+        "subject": "Digital Payment Security Controls",
         "date": "2026-07-31",
         "dateSource": "listed",
-        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13586",
-        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/467MD9CF8CD4ED6364DEEAB5E2638BC39ABA8.PDF"
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13591",
+        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/462MD7323FF342D124FAF9BC3B3F7E4F837A5.PDF"
       },
-      "file": "RBI_NBFC_MiscellaneousSupervisory_2026-07-31.txt"
+      "file": "RBI_NBFC_DigitalPaymentSecurityControls_2026-07-31.txt"
     },
     {
       "kind": "added",
       "entry": {
-        "id": "13587",
-        "title": "Reserve Bank of India (Non-Banking Financial Companies - Supervisory Returns) Directions, 2026",
+        "id": "13592",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
         "entity": "NBFC",
-        "subject": "Supervisory Returns",
+        "subject": "Cybersecurity, Technology: Risk, Resilience and Assurance Framework",
         "date": "2026-07-31",
         "dateSource": "listed",
-        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13587",
-        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/466MD8895831DD9DF4F4ABD6342045EB4509C.PDF"
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13592",
+        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/461MD9FAF2CD7550844EE9A70C884DBE4A8A6.PDF"
       },
-      "file": "RBI_NBFC_SupervisoryReturns_2026-07-31.txt"
+      "file": "RBI_NBFC_CybersecurityTechnologyRiskResilienceAndAssuranceFramework_2026-07-31.txt"
     },
     {
       "kind": "added",
       "entry": {
-        "id": "13588",
-        "title": "Reserve Bank of India (Non-Banking Financial Companies - Statutory Audit) Directions, 2026",
+        "id": "13593",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies - Compliance Function) Directions, 2026",
         "entity": "NBFC",
-        "subject": "Statutory Audit",
+        "subject": "Compliance Function",
         "date": "2026-07-31",
         "dateSource": "listed",
-        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13588",
-        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/465MD03A0FCE0832642DDAAE82DB2FBC920C8.PDF"
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13593",
+        "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/460MD930686EC27D04B4AA9DF4A3481CDD465.PDF"
       },
-      "file": "RBI_NBFC_StatutoryAudit_2026-07-31.txt"
+      "file": "RBI_NBFC_ComplianceFunction_2026-07-31.txt"
     }
   ],
-  "notCovered": [
-    {
-      "id": "13589",
-      "title": "Reserve Bank of India (Non-Banking Financial Companies - Internal Audit Function) Directions, 2026",
-      "entity": "NBFC",
-      "subject": "Internal Audit Function",
-      "date": "2026-07-31",
-      "dateSource": "listed",
-      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13589",
-      "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/464MD4F5E2EE83BB848DFB6B3475F8B91F45B.PDF"
-    },
-    {
-      "id": "13590",
-      "title": "Reserve Bank of India (Non-Banking Financial Companies – Fraud Risk Management) Directions, 2026",
-      "entity": "NBFC",
-      "subject": "Fraud Risk Management",
-      "date": "2026-07-31",
-      "dateSource": "listed",
-      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13590",
-      "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/463MDC5167A28A3B24A2B856804E201261635.PDF"
-    },
-    {
-      "id": "13591",
-      "title": "Reserve Bank of India (Non-Banking Financial Companies – Digital Payment Security Controls) Directions, 2026",
-      "entity": "NBFC",
-      "subject": "Digital Payment Security Controls",
-      "date": "2026-07-31",
-      "dateSource": "listed",
-      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13591",
-      "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/462MD7323FF342D124FAF9BC3B3F7E4F837A5.PDF"
-    },
-    {
-      "id": "13592",
-      "title": "Reserve Bank of India (Non-Banking Financial Companies – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
-      "entity": "NBFC",
-      "subject": "Cybersecurity, Technology: Risk, Resilience and Assurance Framework",
-      "date": "2026-07-31",
-      "dateSource": "listed",
-      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13592",
-      "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/461MD9FAF2CD7550844EE9A70C884DBE4A8A6.PDF"
-    },
-    {
-      "id": "13593",
-      "title": "Reserve Bank of India (Non-Banking Financial Companies - Compliance Function) Directions, 2026",
-      "entity": "NBFC",
-      "subject": "Compliance Function",
-      "date": "2026-07-31",
-      "dateSource": "listed",
-      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13593",
-      "pdfUrl": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/460MD930686EC27D04B4AA9DF4A3481CDD465.PDF"
-    }
-  ]
+  "notCovered": []
 }
