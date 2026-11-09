@@ -1,0 +1,1173 @@
+{
+  "document": "RBI_NBFC_Governance_2026-06-24.pdf",
+  "title": "RBI Governance Directions for NBFCs (updated 24 Jun 2026)",
+  "date": "2026-06-24",
+  "entity": "NBFC",
+  "generatedAt": "2026-11-09T08:08:27.081Z",
+  "model": "gemini-3.5-flash",
+  "items": [
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#1",
+      "obligation": "Adopt Board-approved policies for fit and proper status of directors, Chief Compliance Officer duties, compensation, and Board reviews.",
+      "detail": "Applies to Middle Layer and Upper Layer NBFCs as specified in paragraphs 12, 25(2), 29, and 15.",
+      "para": "7",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c5",
+      "page": "7",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#2",
+      "obligation": "Ensure at least one director has relevant experience working in a bank or an NBFC.",
+      "detail": "",
+      "para": "8",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c6",
+      "page": "8",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#3",
+      "obligation": "Constitute a Risk Management Committee at the Board or executive level to evaluate overall risks including liquidity risk.",
+      "detail": "The committee must report directly to the Board.",
+      "para": "9",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c6",
+      "page": "8",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#4",
+      "obligation": "Obtain prior written approval of RBI for management changes resulting in more than 30 percent director changes.",
+      "detail": "Excludes independent directors and directors re-elected on retirement by rotation. Must inform RBI/NHB of any changes regardless of threshold.",
+      "para": "10",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c6",
+      "page": "8",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "prior to change resulting in >30% replacement",
+        "trigger": "Proposed management change exceeding 30% of directors"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#5",
+      "obligation": "Submit application for change in management to RBI through the PRAVAAH portal with required documents.",
+      "detail": "Application must be on company letterhead accompanied by Annex I and specified portal documents.",
+      "para": "11",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c6",
+      "page": "8",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "prior to management change",
+        "trigger": "Application for management change"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#6",
+      "obligation": "Establish a Board-approved policy and internal process to conduct continuous fit and proper due diligence of directors.",
+      "detail": "Applies at appointment and on a continuing basis.",
+      "para": "12",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA, NBFC-P2P",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#7",
+      "obligation": "Obtain Annex II declaration from proposed/existing directors and ensure scrutiny by Nomination and Remuneration Committee.",
+      "detail": "Must check suitability based on qualification, expertise, integrity, and track record.",
+      "para": "13(1)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA, NBFC-P2P",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "at appointment or renewal",
+        "trigger": "Appointment or renewal of director"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#8",
+      "obligation": "Ensure Nomination and Remuneration Committee scrutinizes director declarations to decide on acceptance.",
+      "detail": "",
+      "para": "13(2)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA, NBFC-P2P",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "during director evaluation",
+        "trigger": "Receipt of director declaration"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#9",
+      "obligation": "Obtain an annual simple declaration from all directors confirming no change in previously furnished information.",
+      "detail": "Directors must furnish details forthwith if there is any change.",
+      "para": "13(3)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA, NBFC-P2P",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "periodic",
+        "frequency": "annual",
+        "due": "as on March 31",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#10",
+      "obligation": "Require directors to execute Deeds of Covenants in the format specified in Annex III.",
+      "detail": "",
+      "para": "13(4)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA, NBFC-P2P",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "upon appointment",
+        "trigger": "Appointment of director"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#11",
+      "obligation": "Submit quarterly statements on director changes and MD/CEO certification of fit and proper criteria to RBI or NHB.",
+      "detail": "Must reach RBI/NHB Regional Office within 15 days of quarter end. March 31 quarter statement must be certified by auditors.",
+      "para": "14",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Reporting",
+      "timing": {
+        "kind": "periodic",
+        "frequency": "quarterly",
+        "due": "within 15 days of the close of each quarter",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#12",
+      "obligation": "Submit periodic reviews on risk management framework and corporate governance standards to the Board of Directors.",
+      "detail": "Covers progress in risk strategy and compliance with committee composition, roles, and meeting frequency.",
+      "para": "15",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "periodic",
+        "frequency": "quarterly",
+        "due": "at periodic intervals prescribed by the Board",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#13",
+      "obligation": "Delineate clearly the specific roles and responsibilities of all Board committees.",
+      "detail": "",
+      "para": "16",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c7",
+      "page": "9-10",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#14",
+      "obligation": "Constitute an Audit Committee consisting of at least three Board members with powers under Section 177 of Companies Act 2013.",
+      "detail": "If already formed under Companies Act Section 177, that committee satisfies this requirement.",
+      "para": "17(1)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c8",
+      "page": "10-11",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#15",
+      "obligation": "Ensure Audit Committee mandates Information System Audit of internal systems as per RBI Outsourcing Directions.",
+      "detail": "Conducted to assess operational risks faced by the NBFC.",
+      "para": "17(2)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c8",
+      "page": "10-11",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "periodic",
+        "frequency": "",
+        "due": "as per periodicity prescribed in RBI Outsourcing Directions",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#16",
+      "obligation": "Form a Nomination and Remuneration Committee with powers and duties specified in Section 178 of Companies Act 2013.",
+      "detail": "Government-owned NBFCs shall form a Nomination Committee instead to ensure fit and proper status of directors.",
+      "para": "18",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c8",
+      "page": "10-11",
+      "appliesTo": "Middle and Upper Layer NBFCs, NBFC-AA",
+      "layers": [
+        "base",
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#17",
+      "obligation": "Appoint a Chief Risk Officer with clearly specified roles and responsibilities.",
+      "detail": "Applies to NBFCs with asset size exceeding ₹5,000 crore.",
+      "para": "19",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c8",
+      "page": "10-11",
+      "appliesTo": "NBFCs with asset size > ₹5,000 crore",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#18",
+      "obligation": "Ensure Chief Risk Officer holds a senior position and possesses adequate professional qualifications and experience in risk management.",
+      "detail": "",
+      "para": "20",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c8",
+      "page": "10-11",
+      "appliesTo": "NBFCs with asset size > ₹5,000 crore",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#19",
+      "obligation": "Establish Board policies safeguarding independent functioning of CRO, direct reporting lines, and prohibiting dual hatting or business targets.",
+      "detail": "CRO reports to MD&CEO or RMCB. If reporting to MD&CEO, RMC/Board must meet CRO without MD&CEO quarterly. No business vertical reporting or targets.",
+      "para": "21",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c8",
+      "page": "10-11",
+      "appliesTo": "NBFCs with asset size > ₹5,000 crore",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "periodic",
+        "frequency": "quarterly",
+        "due": "at least quarterly for RMC/Board meeting without MD&CEO",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#20",
+      "obligation": "Obtain Board approval for CRO appointment and premature removal, and report any early transfer/removal to RBI/NHB and stock exchanges.",
+      "detail": "Report to RBI/NHB Regional Office. Listed NBFCs must also report any change in CRO incumbency to stock exchanges.",
+      "para": "22",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "NBFCs with asset size > ₹5,000 crore",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "upon premature transfer or removal",
+        "trigger": "Premature transfer or removal of Chief Risk Officer"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#21",
+      "obligation": "Involve Chief Risk Officer in risk identification and ensure all retail and wholesale credit proposals are vetted by CRO.",
+      "detail": "CRO's role in deciding credit proposals shall be limited to advisory.",
+      "para": "23",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "NBFCs with asset size > ₹5,000 crore",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#22",
+      "obligation": "Ensure CRO has voting power if serving as decision maker in committee credit sanctioning, making all members jointly and severally liable.",
+      "detail": "Applies to high value proposals sanctioned via committee approach where CRO is a decision maker.",
+      "para": "24",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "NBFCs with asset size > ₹5,000 crore using committee credit sanction",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Risk",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#23",
+      "obligation": "Appoint a Chief Compliance Officer of sufficient seniority and adopt a Board-approved policy detailing CCO roles and responsibilities.",
+      "detail": "Objective is to build a strong compliance risk management framework and culture.",
+      "para": "25",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#24",
+      "obligation": "Prohibit Key Managerial Personnel from holding any office or directorship in any other Middle or Upper Layer NBFC.",
+      "detail": "Exception allowed for directorships held in subsidiaries or Base Layer NBFCs.",
+      "para": "26",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#25",
+      "obligation": "Restrict independent directors from holding Board positions in more than three Middle or Upper Layer NBFCs simultaneously.",
+      "detail": "Restriction does not apply to directorships in Base Layer NBFCs.",
+      "para": "27",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#26",
+      "obligation": "Ensure no conflict of interest arises from an independent director sitting on the Board of another NBFC concurrently.",
+      "detail": "",
+      "para": "28",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#27",
+      "obligation": "Adopt and adhere to a Board-approved compensation policy for KMP and Senior Management containing fixed/variable pay structures and malus/clawback provisions.",
+      "detail": "Not applicable to Government owned NBFCs.",
+      "para": "29",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c9",
+      "page": "12-13",
+      "appliesTo": "Middle and Upper Layer NBFCs (except Government owned)",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#28",
+      "obligation": "Mandate Nomination and Remuneration Committee to oversee framing, review, and implementation of Board-approved compensation policy.",
+      "detail": "Not applicable to Government owned NBFCs.",
+      "para": "30",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c10",
+      "page": "13-14",
+      "appliesTo": "Middle and Upper Layer NBFCs (except Government owned)",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#29",
+      "obligation": "Ensure NRC coordinates with RMC, aligns compensation with capital/ICAAP requirements, and verifies fit and proper status avoiding conflicts.",
+      "detail": "NRC must ensure compensation levels support retained earnings and capital adequacy.",
+      "para": "31",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c10",
+      "page": "13-14",
+      "appliesTo": "Middle and Upper Layer NBFCs (except Government owned)",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#30",
+      "obligation": "Ensure compensation policy fully complies with all statutory mandates, rules, and directions.",
+      "detail": "",
+      "para": "32",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c10",
+      "page": "13-14",
+      "appliesTo": "Middle and Upper Layer NBFCs (except Government owned)",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#31",
+      "obligation": "Structure reasonable compensation packages for KMP and Senior Management aligned with risk outcomes, time horizons, and prudent risk taking.",
+      "detail": "Must balance fixed and variable pay, ensuring cash/equity mix is symmetric with risk outcomes.",
+      "para": "33",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c10",
+      "page": "13-14",
+      "appliesTo": "Middle and Upper Layer NBFCs (except Government owned)",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#32",
+      "obligation": "Include perquisites with monetary ceilings, retiral contributions, and monetary equivalents of non-monetary benefits inside fixed pay.",
+      "detail": "Reimbursable perquisites must have monetary ceilings to be included in fixed pay.",
+      "para": "34",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c10",
+      "page": "13-14",
+      "appliesTo": "Middle and Upper Layer NBFCs (except Government owned)",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#33",
+      "obligation": "Ensure compensation of variable pay for KMP and senior management adheres to statutory provisions and proper performance structures.",
+      "detail": "Variable pay may be cash, share-linked, or a mix; must be reducible to zero based on performance; performance measures must be clearly defined at the start of the period.",
+      "para": "35(1)-(2)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c11",
+      "page": "14-15",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#34",
+      "obligation": "Establish deferral arrangements for variable pay of KMP and senior management based on risk horizons.",
+      "detail": "Deferral applies to cash and non-cash components; deferral period is decided by the Board.",
+      "para": "35(3)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c11",
+      "page": "14-15",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#35",
+      "obligation": "Compensate financial control, risk management, compliance, and internal audit personnel independently from the business areas they oversee.",
+      "detail": "Personnel may have a higher proportion of fixed compensation, with reasonable variable pay to allow malus/clawback execution.",
+      "para": "35(4)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c11",
+      "page": "14-15",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#36",
+      "obligation": "Refrain from paying guaranteed bonus to KMP and senior management.",
+      "detail": "Sign-on or joining bonus for new hires is permitted but cannot be treated as part of fixed or variable pay.",
+      "para": "36",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c11",
+      "page": "14-15",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#37",
+      "obligation": "Subject deferred compensation of KMP and senior management to malus and clawback arrangements.",
+      "detail": "Identify representative situations for invoking malus/clawback covering the entire variable pay; set application period covering at least deferral and retention periods.",
+      "para": "37",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c12",
+      "page": "15-16",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#38",
+      "obligation": "Formulate a whistle blower mechanism for directors and employees to report genuine concerns.",
+      "detail": "",
+      "para": "38",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c12",
+      "page": "15-16",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#39",
+      "obligation": "Ensure good corporate governance practices in the subsidiaries of the NBFC.",
+      "detail": "Board of the NBFC is responsible for ensuring governance practices in subsidiaries.",
+      "para": "39",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c12",
+      "page": "15-16",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#40",
+      "obligation": "Frame internal guidelines on corporate governance with Board approval and publish them on the company website.",
+      "detail": "Guidelines must enhance the scope of the Directions without sacrificing their spirit.",
+      "para": "40",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c12",
+      "page": "15-16",
+      "appliesTo": "Middle and Upper Layer NBFCs",
+      "layers": [
+        "middle",
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#41",
+      "obligation": "Ensure the Board composition has an appropriate mix of educational qualifications, experience, and specific expertise.",
+      "detail": "Expertise required depends on the type of business pursued by the NBFC.",
+      "para": "41",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c13",
+      "page": "17",
+      "appliesTo": "Upper Layer NBFCs",
+      "layers": [
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#42",
+      "obligation": "Report to supervisors if any Independent Director resigns or is removed before completing normal tenure.",
+      "detail": "",
+      "para": "42",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c13",
+      "page": "17",
+      "appliesTo": "Upper Layer NBFCs",
+      "layers": [
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Reporting",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "",
+        "trigger": "Removal or premature resignation of an Independent Director"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#43",
+      "obligation": "List mandatorily on a stock exchange within three years of identification as NBFC-UL and implement listed-entity disclosures prior to listing.",
+      "detail": "Not applicable to NBFC-UL fully owned and controlled by the Government.",
+      "para": "43",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c13",
+      "page": "17",
+      "appliesTo": "Upper Layer NBFCs",
+      "layers": [
+        "upper"
+      ],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "deadline",
+        "frequency": "",
+        "due": "within three years of identification in the Upper Layer",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#44",
+      "obligation": "Obtain completed information forms from proposed directors prior to their appointment.",
+      "detail": "Form requires personal details, experience, shareholding, directorships, regulatory actions, and economic offense disclosures (Annex I).",
+      "para": "Annex I",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c14",
+      "page": "18-20",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "",
+        "trigger": "Proposal of a new Director"
+      },
+      "verified": false
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#45",
+      "obligation": "Obtain signed Declaration and Undertaking from each director regarding fit and proper criteria.",
+      "detail": "Director undertakes to inform the NBFC of subsequent changes and execute Deed of Covenants (Annex II).",
+      "para": "Annex II",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c16",
+      "page": "23-24",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "as soon as possible upon relevant events",
+        "trigger": "Appointment of Director or occurrence of subsequent relevant events"
+      },
+      "verified": false
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#46",
+      "obligation": "Execute a Deed of Covenants with every director upon their appointment.",
+      "detail": "Form of Deed of Covenants lays out obligations, fiduciary duties, and company disclosures (Annex III).",
+      "para": "Annex III",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c18",
+      "page": "26-27",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "",
+        "trigger": "Appointment of Director"
+      },
+      "verified": false
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#47",
+      "obligation": "Apprise directors of Board procedures, control systems, corporate policies, legal duties, and regulatory updates.",
+      "detail": "NBFC must inform directors on voting rights, committee charters, insider trading rules, executive powers, and appoint a compliance officer.",
+      "para": "Annex III(III)(a)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c20",
+      "page": "28-30",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#48",
+      "obligation": "Provide required disclosures and relevant information to all directors to enable informed decision-making.",
+      "detail": "Disclosures must include strategic plans, updates on products, major expenditure, organizational structure, performance reviews, and strategic initiative reports.",
+      "para": "Annex VI(I)(c)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c21",
+      "page": "30",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#49",
+      "obligation": "Circulate Board meeting minutes to directors in a timely manner.",
+      "detail": "Communicate outcomes and circulate minutes to directors to the extent possible within two business days of the conclusion of the Board meeting.",
+      "para": "Annex VI(I)(d)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c21",
+      "page": "30",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "deadline",
+        "frequency": "",
+        "due": "within two business days of the date of conclusion of the Board meeting",
+        "trigger": "conclusion of Board meeting"
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#50",
+      "obligation": "Advise each director about the levels of authority delegated in matters placed before the Board.",
+      "detail": "",
+      "para": "Annex VI(I)(e)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c21",
+      "page": "30",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#51",
+      "obligation": "Provide periodic reports to directors regarding the functioning and effectiveness of the internal control system.",
+      "detail": "",
+      "para": "Annex VI(IV)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c21",
+      "page": "30",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "periodic",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#52",
+      "obligation": "Appoint a senior executive as Compliance Officer reporting directly to the Board.",
+      "detail": "The officer is responsible for setting policies/procedures and monitoring compliance with applicable laws, regulations, and RBI directions.",
+      "para": "Annex VI(V)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c22",
+      "page": "31",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#53",
+      "obligation": "Ensure directors do not assign, transfer, sublet, or encumber their office, rights, or obligations to third parties.",
+      "detail": "Subject to applicable laws and Articles of Association regarding Board delegation.",
+      "para": "Annex VI(VI)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c22",
+      "page": "31",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "ongoing",
+        "frequency": "",
+        "due": "",
+        "trigger": ""
+      },
+      "verified": true
+    },
+    {
+      "id": "RBI_NBFC_Governance_2026-06-24#54",
+      "obligation": "Execute any amendments to the Deed of Covenants in writing and signed by both parties.",
+      "detail": "Deed must be executed in duplicate, with both copies deemed originals.",
+      "para": "Annex VI(VIII)",
+      "chunkId": "RBI_NBFC_Governance_2026-06-24_c22",
+      "page": "31",
+      "appliesTo": "All NBFCs",
+      "layers": [],
+      "deposits": "any",
+      "category": "Governance",
+      "timing": {
+        "kind": "event",
+        "frequency": "",
+        "due": "",
+        "trigger": "amendment or supplement to Deed of Covenants"
+      },
+      "verified": true
+    }
+  ],
+  "coverage": {
+    "paragraphs": 47,
+    "withItems": 37,
+    "without": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "44",
+      "45",
+      "46",
+      "47"
+    ]
+  }
+}

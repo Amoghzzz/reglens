@@ -1,0 +1,623 @@
+{
+  "checkedAt": "2026-11-09T08:05:19.745Z",
+  "ok": true,
+  "rows": [
+    {
+      "document": "RBI_NBFC_AcceptanceOfPublicDeposits_2026-04-15.pdf",
+      "shortTitle": "Acceptance Of Public Deposits",
+      "indexedDate": "2026-04-15",
+      "state": "current",
+      "rbi": {
+        "id": "12958",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Acceptance of Public Deposits) Directions, 2025 (Updated as on April 15, 2026)",
+        "entity": "NBFC",
+        "subject": "Acceptance of Public Deposits",
+        "date": "2026-04-15",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12958"
+      }
+    },
+    {
+      "document": "RBI_NBFC_AccountAggregator_2025-11-28.pdf",
+      "shortTitle": "Account Aggregator",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12936",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Account Aggregator",
+        "date": "2026-03-10",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12936"
+      }
+    },
+    {
+      "document": "RBI_NBFC_AcquisitionOfShareholdingOrControl_2025-11-28.pdf",
+      "shortTitle": "Acquisition Of Shareholding Or Control",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12964",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Acquisition of Shareholding or Control) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Acquisition of Shareholding or Control",
+        "date": "2026-04-15",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12964"
+      }
+    },
+    {
+      "document": "RBI_NBFC_AssetLiabilityManagement_2026-07-01.pdf",
+      "shortTitle": "Asset Liability Management",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12949",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Asset Liability Management) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Asset Liability Management",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12949"
+      }
+    },
+    {
+      "document": "RBI_NBFC_BranchAuthorisation_2026-04-15.pdf",
+      "shortTitle": "Branch Authorisation",
+      "indexedDate": "2026-04-15",
+      "state": "current",
+      "rbi": {
+        "id": "12962",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Branch Authorisation) Directions, 2025 (Updated as on April 15, 2026)",
+        "entity": "NBFC",
+        "subject": "Branch Authorisation",
+        "date": "2026-04-15",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12962"
+      }
+    },
+    {
+      "document": "RBI_NBFC_ClassificationValuationAndOperationOfInvestmentPortfolio_2026-07-01.pdf",
+      "shortTitle": "Classification Valuation And Operation Of Investment Portfolio",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12950",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Classification, Valuation and Operation of Investment Portfolio) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Classification, Valuation and Operation of Investment Portfolio",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12950"
+      }
+    },
+    {
+      "document": "RBI_NBFC_ClimateFinanceAndManagementOfClimateChangeRisks_2025-11-28.pdf",
+      "shortTitle": "Climate Finance And Management Of Climate Change Risks",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12940",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Climate Finance and Management of Climate Change Risks) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Climate Finance and Management of Climate Change Risks",
+        "date": "2026-10-01",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12940"
+      }
+    },
+    {
+      "document": "RBI_NBFC_ConcentrationRiskManagement_2026-08-25.pdf",
+      "shortTitle": "Concentration Risk Management",
+      "indexedDate": "2026-08-25",
+      "state": "current",
+      "rbi": {
+        "id": "12953",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies - Concentration Risk Management) Directions, 2025 (Updated as on August 25, 2026)",
+        "entity": "NBFC",
+        "subject": "Concentration Risk Management",
+        "date": "2026-08-25",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12953"
+      }
+    },
+    {
+      "document": "RBI_CIC_CoreInvestmentCompanies_2026-03-10.pdf",
+      "shortTitle": "Core Investment Companies",
+      "indexedDate": "2026-03-10",
+      "state": "current",
+      "rbi": {
+        "id": "12937",
+        "title": "Reserve Bank of India (Core Investment Companies) Directions, 2025 (Updated as on March 10, 2026)",
+        "entity": "CIC",
+        "subject": "",
+        "date": "2026-03-10",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12937"
+      }
+    },
+    {
+      "document": "RBI_NBFC_CreditCardsIssuanceAndConduct_2025-11-28.pdf",
+      "shortTitle": "Credit Cards Issuance And Conduct",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12956",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Credit Cards: Issuance and Conduct) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Credit Cards: Issuance and Conduct",
+        "date": "2026-07-01",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12956"
+      }
+    },
+    {
+      "document": "RBI_NBFC_CreditFacilities_2026-07-15.pdf",
+      "shortTitle": "Credit Facilities",
+      "indexedDate": "2026-07-15",
+      "state": "current",
+      "rbi": {
+        "id": "12957",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Credit Facilities) Directions, 2025 (updated as on July 15, 2026)",
+        "entity": "NBFC",
+        "subject": "Credit Facilities",
+        "date": "2026-07-15",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12957"
+      }
+    },
+    {
+      "document": "RBI_NBFC_CreditInformationReporting_2026-07-01.pdf",
+      "shortTitle": "Credit Information Reporting",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12955",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Credit Information Reporting) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Credit Information Reporting",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12955"
+      }
+    },
+    {
+      "document": "RBI_NBFC_CreditRiskManagement_2026-07-01.pdf",
+      "shortTitle": "Credit Risk Management",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12954",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Credit Risk Management) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Credit Risk Management",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12954"
+      }
+    },
+    {
+      "document": "RBI_NBFC_FinancialStatementsPresentationAndDisclosures_2026-07-01.pdf",
+      "shortTitle": "Financial Statements Presentation And Disclosures",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12945",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Financial Statements: Presentation and Disclosures) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Financial Statements: Presentation and Disclosures",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12945"
+      }
+    },
+    {
+      "document": "RBI_NBFC_Governance_2026-06-24.pdf",
+      "shortTitle": "Governance",
+      "indexedDate": "2026-06-24",
+      "state": "current",
+      "rbi": {
+        "id": "12960",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Governance) Directions, 2025 (Updated as on June 24, 2026)",
+        "entity": "NBFC",
+        "subject": "Governance",
+        "date": "2026-06-24",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12960"
+      }
+    },
+    {
+      "document": "RBI_HFC_HousingFinanceCompanies_2026-10-01.pdf",
+      "shortTitle": "Housing Finance Companies",
+      "indexedDate": "2026-10-01",
+      "state": "current",
+      "rbi": {
+        "id": "12939",
+        "title": "Reserve Bank of India (Housing Finance Companies) Directions, 2025 (Updated as on October 01, 2026)",
+        "entity": "HFC",
+        "subject": "",
+        "date": "2026-10-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12939"
+      }
+    },
+    {
+      "document": "RBI_NBFC_IncomeRecognitionAssetClassificationAndProvisioning_2026-10-01.pdf",
+      "shortTitle": "Income Recognition Asset Classification And Provisioning",
+      "indexedDate": "2026-10-01",
+      "state": "current",
+      "rbi": {
+        "id": "12948",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Income Recognition, Asset Classification and Provisioning) Directions, 2025 (Updated as on October 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Income Recognition, Asset Classification and Provisioning",
+        "date": "2026-10-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12948"
+      }
+    },
+    {
+      "document": "RBI_NBFC_KnowYourCustomer_2025-12-29.pdf",
+      "shortTitle": "Know Your Customer",
+      "indexedDate": "2025-12-29",
+      "state": "current",
+      "rbi": {
+        "id": "12943",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer) Directions, 2025 (Updated as on December 29, 2025)",
+        "entity": "NBFC",
+        "subject": "Know Your Customer",
+        "date": "2025-12-29",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12943"
+      }
+    },
+    {
+      "document": "RBI_NBFC_ManagingRisksInOutsourcing_2025-11-28.pdf",
+      "shortTitle": "Managing Risks In Outsourcing",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12941",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Managing Risks in Outsourcing) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Managing Risks in Outsourcing",
+        "date": "2026-10-01",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12941"
+      }
+    },
+    {
+      "document": "RBI_NBFC_MicrofinanceInstitution_2025-11-28.pdf",
+      "shortTitle": "Microfinance Institution",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12933",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Microfinance Institution) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Microfinance Institution",
+        "date": "2025-12-05",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12933"
+      }
+    },
+    {
+      "document": "RBI_NBFC_Miscellaneous_2026-02-26.pdf",
+      "shortTitle": "Miscellaneous",
+      "indexedDate": "2026-02-26",
+      "state": "current",
+      "rbi": {
+        "id": "12931",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Miscellaneous) Directions, 2025 (Updated as on February 26, 2026)",
+        "entity": "NBFC",
+        "subject": "Miscellaneous",
+        "date": "2026-02-26",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12931"
+      }
+    },
+    {
+      "document": "RBI_MGC_MortgageGuaranteeCompanies_2026-03-10.pdf",
+      "shortTitle": "Mortgage Guarantee Companies",
+      "indexedDate": "2026-03-10",
+      "state": "current",
+      "rbi": {
+        "id": "12935",
+        "title": "Reserve Bank of India (Mortgage Guarantee Companies) Directions, 2025 (Updated as on March 10, 2026)",
+        "entity": "MGC",
+        "subject": "",
+        "date": "2026-03-10",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12935"
+      }
+    },
+    {
+      "document": "RBI_NOFHC_NonOperativeFinancialHoldingCompany_2025-12-05.pdf",
+      "shortTitle": "Non Operative Financial Holding Company",
+      "indexedDate": "2025-12-05",
+      "state": "current",
+      "rbi": {
+        "id": "12932",
+        "title": "Reserve Bank of India (Non-Operative Financial Holding Companies) Directions, 2025 (Updated as on December 05, 2025)",
+        "entity": "NOFHC",
+        "subject": "",
+        "date": "2025-12-05",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12932"
+      }
+    },
+    {
+      "document": "RBI_NBFC_PeerToPeerLendingPlatform_2025-11-28.pdf",
+      "shortTitle": "Peer To Peer Lending Platform",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12934",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Peer to Peer Lending Platform) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Peer to Peer Lending Platform",
+        "date": "2025-12-05",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12934"
+      }
+    },
+    {
+      "document": "RBI_NBFC_PrudentialNormsOnCapitalAdequacy_2026-07-01.pdf",
+      "shortTitle": "Prudential Norms On Capital Adequacy",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12959",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Prudential Norms on Capital Adequacy",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12959"
+      }
+    },
+    {
+      "document": "RBI_NBFC_PrudentialNormsOnDeclarationOfDividends_2026-07-01.pdf",
+      "shortTitle": "Prudential Norms On Declaration Of Dividends",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12944",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Prudential Norms on Declaration of Dividends) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Prudential Norms on Declaration of Dividends",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12944"
+      }
+    },
+    {
+      "document": "RBI_NBFC_RegistrationExemptionsAndFrameworkForScaleBasedRegulation_2026-07-01.pdf",
+      "shortTitle": "Registration Exemptions And Framework For Scale Based Regulation",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12965",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Registration, Exemptions and Framework for Scale Based Regulation) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Registration, Exemptions and Framework for Scale Based Regulation",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12965"
+      }
+    },
+    {
+      "document": "RBI_NBFC_ResolutionOfStressedAssets_2026-10-01.pdf",
+      "shortTitle": "Resolution Of Stressed Assets",
+      "indexedDate": "2026-10-01",
+      "state": "current",
+      "rbi": {
+        "id": "12947",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Resolution of Stressed Assets) Directions, 2025 (updated as on October 1, 2026)",
+        "entity": "NBFC",
+        "subject": "Resolution of Stressed Assets",
+        "date": "2026-10-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12947"
+      }
+    },
+    {
+      "document": "RBI_NBFC_ResponsibleBusinessConduct_2026-07-01.pdf",
+      "shortTitle": "Responsible Business Conduct",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12942",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Responsible Business Conduct) Directions, 2025 (Updated as on July 1, 2026)",
+        "entity": "NBFC",
+        "subject": "Responsible Business Conduct",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12942"
+      }
+    },
+    {
+      "document": "RBI_NBFC_SecuritisationTransactions_2026-07-01.pdf",
+      "shortTitle": "Securitisation Transactions",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12951",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Securitisation Transactions) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Securitisation Transactions",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12951"
+      }
+    },
+    {
+      "document": "RBI_SPD_StandalonePrimaryDealers_2026-03-10.pdf",
+      "shortTitle": "Standalone Primary Dealers",
+      "indexedDate": "2026-03-10",
+      "state": "current",
+      "rbi": {
+        "id": "12938",
+        "title": "Reserve Bank of India (Standalone Primary Dealers) Directions, 2025 (Updated as on March 10, 2026)",
+        "entity": "SPD",
+        "subject": "",
+        "date": "2026-03-10",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12938"
+      }
+    },
+    {
+      "document": "RBI_NBFC_TransferAndDistributionOfCreditRisk_2026-07-01.pdf",
+      "shortTitle": "Transfer And Distribution Of Credit Risk",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12952",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies - Transfer and Distribution of Credit Risk) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Transfer and Distribution of Credit Risk",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12952"
+      }
+    },
+    {
+      "document": "RBI_NBFC_TreatmentOfWilfulDefaultersAndLargeDefaulters_2026-07-01.pdf",
+      "shortTitle": "Treatment Of Wilful Defaulters And Large Defaulters",
+      "indexedDate": "2026-07-01",
+      "state": "current",
+      "rbi": {
+        "id": "12946",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Treatment of Wilful Defaulters and Large Defaulters) Directions, 2025 (Updated as on July 01, 2026)",
+        "entity": "NBFC",
+        "subject": "Treatment of Wilful Defaulters and Large Defaulters",
+        "date": "2026-07-01",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12946"
+      }
+    },
+    {
+      "document": "RBI_NBFC_UndertakingOfFinancialServices_2026-10-05.pdf",
+      "shortTitle": "Undertaking Of Financial Services",
+      "indexedDate": "2026-10-05",
+      "state": "current",
+      "rbi": {
+        "id": "12961",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Undertaking of Financial Services) Directions, 2025 (Updated as on October 05, 2026)",
+        "entity": "NBFC",
+        "subject": "Undertaking of Financial Services",
+        "date": "2026-10-05",
+        "dateSource": "updated",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12961"
+      }
+    },
+    {
+      "document": "RBI_NBFC_VoluntaryAmalgamation_2025-11-28.pdf",
+      "shortTitle": "Voluntary Amalgamation",
+      "indexedDate": "2025-11-28",
+      "state": "check",
+      "rbi": {
+        "id": "12963",
+        "title": "Reserve Bank of India (Non-Banking Financial Companies – Voluntary Amalgamation) Directions, 2025",
+        "entity": "NBFC",
+        "subject": "Voluntary Amalgamation",
+        "date": "2026-04-15",
+        "dateSource": "listed",
+        "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12963"
+      }
+    }
+  ],
+  "notIndexed": [
+    {
+      "id": "13585",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies - Auditor’s Report) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Auditor’s Report",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13585"
+    },
+    {
+      "id": "13586",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies – Miscellaneous) Supervisory Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Miscellaneous (Supervisory)",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13586"
+    },
+    {
+      "id": "13587",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies - Supervisory Returns) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Supervisory Returns",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13587"
+    },
+    {
+      "id": "13588",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies - Statutory Audit) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Statutory Audit",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13588"
+    },
+    {
+      "id": "13589",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies - Internal Audit Function) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Internal Audit Function",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13589"
+    },
+    {
+      "id": "13590",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies – Fraud Risk Management) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Fraud Risk Management",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13590"
+    },
+    {
+      "id": "13591",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies – Digital Payment Security Controls) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Digital Payment Security Controls",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13591"
+    },
+    {
+      "id": "13592",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Cybersecurity, Technology: Risk, Resilience and Assurance Framework",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13592"
+    },
+    {
+      "id": "13593",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies - Compliance Function) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Compliance Function",
+      "date": "2026-07-31",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13593"
+    },
+    {
+      "id": "13274",
+      "title": "Reserve Bank of India (Non-Banking Financial Companies - Internal Ombudsman) Directions, 2026",
+      "entity": "NBFC",
+      "subject": "Internal Ombudsman",
+      "date": "2026-01-14",
+      "dateSource": "listed",
+      "url": "https://rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13274"
+    }
+  ]
+}
